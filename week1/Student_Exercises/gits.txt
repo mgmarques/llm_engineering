@@ -1,0 +1,19 @@
+git status
+output
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+	modified:   week1/Studant_Exercices/Day 1.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+git diff --stat "week1/Studant_Exercices/Day 1.ipynb"
+output:
+week1/Studant_Exercices/Day 1.ipynb | 2 ++
+ 1 file changed, 2 insertions(+)
+
+git add "week1/Studant_Exercices/Day 1.ipynb" && git commit -m "$(cat <<'EOF'
+Update Day 1 student exercises notebook
+EOF
+)" && git push
