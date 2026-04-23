@@ -1,12 +1,12 @@
+# UV
+## Update the uv to its last version
+> UV self update
+
+## Create the env
+> uv sync
+
+# GIT
 git status
-output
-On branch main
-Your branch is up to date with 'origin/main'.
-
-Changes not staged for commit:
-	modified:   week1/Studant_Exercices/Day 1.ipynb
-
-no changes added to commit (use "git add" and/or "git commit -a")
 
 git diff --stat "week1/Studant_Exercices/Day 1.ipynb"
 output:
