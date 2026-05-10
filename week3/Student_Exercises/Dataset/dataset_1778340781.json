@@ -1,0 +1,62 @@
+[
+    {
+        "review_id": 1,
+        "movie_name": "Beyond the Stars",
+        "cinema_cod": "CIN01",
+        "days_watched_after_release": 5,
+        "reviewer_name": "Alice Smith",
+        "reviewer_media": "Blog",
+        "review_text": "An exhilarating journey through the cosmos with breathtaking visuals and a compelling story.",
+        "starts_rating": 5,
+        "sentiment_analyses": "Positive",
+        "date_time_review": "2023-10-05T14:30:00"
+    },
+    {
+        "review_id": 2,
+        "movie_name": "The Silent Echo",
+        "cinema_cod": "CIN02",
+        "days_watched_after_release": 10,
+        "reviewer_name": "John Doe",
+        "reviewer_media": "Vlog",
+        "review_text": "A hauntingly beautiful film that leaves a lasting impression, though it drags in the middle.",
+        "starts_rating": 4,
+        "sentiment_analyses": "Mixed",
+        "date_time_review": "2023-10-10T10:00:00"
+    },
+    {
+        "review_id": 3,
+        "movie_name": "Action Heroes Unite",
+        "cinema_cod": "CIN03",
+        "days_watched_after_release": 3,
+        "reviewer_name": "Emily Johnson",
+        "reviewer_media": "Twitter",
+        "review_text": "A fun, action-packed ride! Perfect for fans of the genre, though the plot is predictable.",
+        "starts_rating": 4,
+        "sentiment_analyses": "Positive",
+        "date_time_review": "2023-10-07T18:45:00"
+    },
+    {
+        "review_id": 4,
+        "movie_name": "Love in the Time of Chaos",
+        "cinema_cod": "CIN01",
+        "days_watched_after_release": 2,
+        "reviewer_name": "Michael Brown",
+        "reviewer_media": "Blog",
+        "review_text": "An emotional rollercoaster that beautifully captures the essence of love amidst turmoil.",
+        "starts_rating": 5,
+        "sentiment_analyses": "Positive",
+        "date_time_review": "2023-10-06T12:15:00"
+    },
+    {
+        "review_id": 5,
+        "movie_name": "The Final Showdown",
+        "cinema_cod": "CIN04",
+        "days_watched_after_release": 1,
+        "reviewer_name": "Sophia Davis",
+        "reviewer_media": "Facebook",
+        "review_text": "Disappointing and clich\u00e9, this film fails to deliver on the hype. Not worth the watch.",
+        "starts_rating": 2,
+        "sentiment_analyses": "Negative",
+        "date_time_review": "2023-10-04T20:30:00"
+    }
+]

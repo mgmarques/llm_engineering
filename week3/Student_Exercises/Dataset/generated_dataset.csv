@@ -1,0 +1,6 @@
+review_id,movie_name,cinema_cod,days_watched_after_release,reviewer_name,reviewer_media,review_text,starts_rating,sentiment_analyses,date_time_review
+1,"The Great Adventure","CIN01",10,"Alice Smith","INSTA","A thrilling journey with breathtaking visuals and a compelling storyline.","5","Positive","2023-10-01 14:30:00"
+2,"Mystery of the Lost City","CIN02",15,"Bob Johnson","TWIT","An engaging plot twist that keeps you on the edge of your seat!","4","Positive","2023-10-02 16:45:00"
+3,"Romantic Escapade","CIN03",5,"Charlie Brown","FACE","A beautiful love story, though a bit predictable at times.","3","Neutral","2023-10-03 18:00:00"
+4,"Action Hero Returns","CIN04",20,"Diana Prince","SNAP","Explosions and stunts galore, but lacks character depth.","2","Negative","2023-10-04 20:15:00"
+5,"The Comedy Showdown","CIN05",7,"Ethan Hunt","TIKT","A laugh-out-loud experience with a few memorable moments.","4","Positive","2023-10-05 19:30:00"

@@ -1,0 +1,6 @@
+review_id,movie_name,cinema_cod,days_watched_after_release,reviewer_name,reviewer_media,review_text,starts_rating,sentiment_analyses,date_time_review
+1,"The Great Escape","CIN01",10,"Alice Smith","MEDIA","An exhilarating journey with stunning visuals and a gripping storyline that kept me on the edge of my seat!","5","Positive","2023-10-01 14:30:00"
+2,"Mystery of the Ocean","CIN02",5,"John Doe","MEDIA","A captivating film that beautifully portrays the deep-sea adventures, though some parts felt a bit stretched.","4","Positive","2023-10-03 16:00:00"
+3,"Beyond the Stars","CIN03",12,"Emma Brown","MEDIA","The plot was confusing at times, but the cinematography was breathtaking. An average experience overall.","3","Neutral","2023-10-05 18:15:00"
+4,"The Last Stand","CIN04",3,"Michael Johnson","MEDIA","An intense thriller with great character development, but the ending fell flat for me.","4","Mixed","2023-10-02 20:45:00"
+5,"Love in the Time of Science","CIN05",1,"Olivia White","MEDIA","A charming romantic comedy with witty dialogues, perfect for a light-hearted evening!","5","Positive","2023-10-04 19:00:00"

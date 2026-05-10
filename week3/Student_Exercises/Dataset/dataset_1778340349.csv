@@ -1,0 +1,6 @@
+review_id,movie_name,cinema_cod,days_watched_after_release,reviewer_name,reviewer_media,review_text,starts_rating,sentiment_analyses,date_time_review
+1,The Galactic Odyssey,CIN01,10,Alice Wonderland,Blog,A breathtaking space opera with stunning visuals and a compelling story. A must-see for sci-fi fans!,5,Positive,2023-10-26 14:30:00
+2,Whispers in the Dark,CIN02,3,Bob The Builder,Forum,The plot was a bit slow, but the suspense built up nicely. A decent thriller, but not groundbreaking.,3,Neutral,2023-10-25 19:00:00
+3,Laugh Out Loud,CIN03,25,Charlie Chaplin,Other,Absolutely hilarious! I haven't laughed this hard in ages. The cast had amazing chemistry.,5,Positive,2023-10-20 11:15:00
+4,The Forgotten Kingdom,CIN01,7,Diana Prince,News,Visually spectacular, but the story felt a bit disjointed. Worth seeing for the special effects alone.,4,Mixed,2023-10-24 16:45:00
+5,Silent Echoes,CIN04,1,Eve Harrington,Social,A truly moving and thought-provoking drama. The acting was superb and left a lasting impression.,5,Positive,2023-10-27 21:00:00

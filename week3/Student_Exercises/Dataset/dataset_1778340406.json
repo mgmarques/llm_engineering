@@ -1,0 +1,62 @@
+[
+    {
+        "review_id": 1,
+        "movie_name": "The Midnight Voyage",
+        "cinema_cod": "C001A",
+        "days_watched_after_release": 3,
+        "reviewer_name": "Alex Rivera",
+        "reviewer_media": "IG",
+        "review_text": "The cinematography was breathtaking, and the plot kept me on edge the whole time.",
+        "starts_rating": 5,
+        "sentiment_analyses": "Positive",
+        "date_time_review": "2023-08-12T14:35:22Z"
+    },
+    {
+        "review_id": 2,
+        "movie_name": "Echoes of Tomorrow",
+        "cinema_cod": "C002B",
+        "days_watched_after_release": 10,
+        "reviewer_name": "Mia Chen",
+        "reviewer_media": "Blog",
+        "review_text": "While the concept was intriguing, the pacing felt off and the ending was unsatisfying.",
+        "starts_rating": 2,
+        "sentiment_analyses": "Negative",
+        "date_time_review": "2023-09-01T09:12:45Z"
+    },
+    {
+        "review_id": 3,
+        "movie_name": "Starlight Heist",
+        "cinema_cod": "C003C",
+        "days_watched_after_release": 0,
+        "reviewer_name": "Jordan Lee",
+        "reviewer_media": "YT",
+        "review_text": "A fun, fast-paced action film with great chemistry among the cast.",
+        "starts_rating": 4,
+        "sentiment_analyses": "Positive",
+        "date_time_review": "2023-07-20T20:05:10Z"
+    },
+    {
+        "review_id": 4,
+        "movie_name": "Silent Whispers",
+        "cinema_cod": "C004D",
+        "days_watched_after_release": 5,
+        "reviewer_name": "Sam Patel",
+        "reviewer_media": "FB",
+        "review_text": "The movie tried to be deep but ended up feeling pretentious and confusing.",
+        "starts_rating": 1,
+        "sentiment_analyses": "Negative",
+        "date_time_review": "2023-08-30T11:45:00Z"
+    },
+    {
+        "review_id": 5,
+        "movie_name": "Harbor Lights",
+        "cinema_cod": "C005E",
+        "days_watched_after_release": 2,
+        "reviewer_name": "Lena G\u00f3mez",
+        "reviewer_media": "IG",
+        "review_text": "A heartfelt story that resonated with me; the soundtrack was beautiful.",
+        "starts_rating": 5,
+        "sentiment_analyses": "Positive",
+        "date_time_review": "2023-09-10T16:20:33Z"
+    }
+]

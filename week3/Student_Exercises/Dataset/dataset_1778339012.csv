@@ -1,0 +1,6 @@
+review_id,movie_name,cinema_cod,days_watched_after_release,reviewer_name,reviewer_media,review_text,starts_rating,sentiment_analyses,date_time_review
+1,The Galactic Odyssey,CIN01,10,Alice Smith,M_EXP,"A breathtaking space epic with stunning visuals and a captivating story. The plot twists kept me on the edge of my seat!",5,Positive,2024-03-15 14:30:00
+2,Whispers in the Woods,CIN02,3,Bob Johnson,M_FIL,"A slow burn horror that relies more on atmosphere than jump scares. Some scenes were a bit too dark, but overall a decent watch.",3,Neutral,2024-03-18 19:00:00
+3,City of Shadows,CIN03,25,Charlie Brown,M_WEB,"Disappointing sequel. The acting was wooden and the plot was predictable. I expected more from this franchise.",2,Negative,2024-02-28 10:00:00
+4,The Laughing Detective,CIN01,7,Diana Prince,M_BLOG,"An absolute riot! The comedic timing was perfect and the mystery was genuinely engaging. Highly recommend for a good laugh.",5,Positive,2024-03-12 16:45:00
+5,Echoes of Tomorrow,CIN04,1,Eve Adams,M_SOC,"Visually spectacular, but the story felt a bit convoluted. It had some interesting ideas, but didn't quite stick the landing.",4,Mixed,2024-03-20 21:00:00

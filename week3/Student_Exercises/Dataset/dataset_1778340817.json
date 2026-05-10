@@ -1,0 +1,62 @@
+[
+    {
+        "review_id": 1,
+        "movie_name": "The Galactic Odyssey",
+        "cinema_cod": "CINE1",
+        "days_watched_after_release": 7,
+        "reviewer_name": "Alice Smith",
+        "reviewer_media": "IMDB",
+        "review_text": "An epic space adventure with stunning visuals and a compelling storyline. The acting was superb, and the special effects were out of this world!",
+        "starts_rating": 5,
+        "sentiment_analyses": "Positive",
+        "date_time_review": "2023-10-26T10:00:00Z"
+    },
+    {
+        "review_id": 2,
+        "movie_name": "Whispers in the Dark",
+        "cinema_cod": "CINE2",
+        "days_watched_after_release": 14,
+        "reviewer_name": "Bob Johnson",
+        "reviewer_media": "ROTTN",
+        "review_text": "A chilling psychological thriller that kept me on the edge of my seat. The suspense was masterfully built, though the ending felt a bit rushed.",
+        "starts_rating": 4,
+        "sentiment_analyses": "Positive",
+        "date_time_review": "2023-10-27T11:30:00Z"
+    },
+    {
+        "review_id": 3,
+        "movie_name": "Laugh Out Loud",
+        "cinema_cod": "CINE3",
+        "days_watched_after_release": 3,
+        "reviewer_name": "Charlie Brown",
+        "reviewer_media": "METAC",
+        "review_text": "Disappointing comedy. The jokes fell flat, and the plot was predictable. I hoped for more, but it just didn't deliver the laughs.",
+        "starts_rating": 2,
+        "sentiment_analyses": "Negative",
+        "date_time_review": "2023-10-28T14:15:00Z"
+    },
+    {
+        "review_id": 4,
+        "movie_name": "The Forgotten Kingdom",
+        "cinema_cod": "CINE1",
+        "days_watched_after_release": 21,
+        "reviewer_name": "Diana Prince",
+        "reviewer_media": "IMDB",
+        "review_text": "A beautiful historical drama with incredible costumes and cinematography. The performances were strong, but the pacing was a bit slow at times.",
+        "starts_rating": 4,
+        "sentiment_analyses": "Positive",
+        "date_time_review": "2023-10-29T09:45:00Z"
+    },
+    {
+        "review_id": 5,
+        "movie_name": "Future Shock",
+        "cinema_cod": "CINE4",
+        "days_watched_after_release": 10,
+        "reviewer_name": "Eve Adams",
+        "reviewer_media": "ROTTN",
+        "review_text": "Intriguing sci-fi concept, but the execution was flawed. The special effects were good, but the script needed more polish. A mixed bag overall.",
+        "starts_rating": 3,
+        "sentiment_analyses": "Neutral",
+        "date_time_review": "2023-10-30T16:00:00Z"
+    }
+]

@@ -1,0 +1,6 @@
+review_id,movie_name,cinema_cod,days_watched_after_release,reviewer_name,reviewer_media,review_text,starts_rating,sentiment_analyses,date_time_review
+1,"The Great Adventure","CIN01",10,"Alice Smith","YOUTUBE","An exhilarating journey with unexpected twists and turns!","5","Positive","2023-10-05 14:30:00"
+2,"Silent Shadows","CIN02",5,"Bob Johnson","TWITTER","A beautifully crafted film that lingers in your mind long after the credits roll.","4","Positive","2023-10-06 11:15:00"
+3,"Mystery of the Lost","CIN03",12,"Charlie Brown","INSTAGRAM","The plot was convoluted, and the ending left much to be desired.","2","Negative","2023-10-07 09:45:00"
+4,"Epic Battles","CIN04",1,"Diana Prince","FACEBOOK","A visual masterpiece, but the story fell flat in many places.","3","Mixed","2023-10-08 19:00:00"
+5,"Love in Chaos","CIN05",7,"Ethan Hunt","SNAPCHAT","A heartwarming tale that balances humor and drama beautifully!","5","Positive","2023-10-09 16:20:00"

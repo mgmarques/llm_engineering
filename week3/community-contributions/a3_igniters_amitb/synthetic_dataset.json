@@ -1,0 +1,42 @@
+[
+  {
+    "input":"Crop rotation and soil management are crucial for high crop yields.",
+    "output":"positive"
+  },
+  {
+    "input":"Agribusiness is creating new job opportunities for local communities.",
+    "output":"positive"
+  },
+  {
+    "input":"Farmers need to adopt new technologies to increase efficiency and productivity.",
+    "output":"neutral"
+  },
+  {
+    "input":"Sustainable agriculture practices are essential for environmental conservation.",
+    "output":"positive"
+  },
+  {
+    "input":"Investing in agribusiness can lead to significant economic growth.",
+    "output":"positive"
+  },
+  {
+    "input":"Farmers must balance crop production with crop protection to avoid pest and disease issues.",
+    "output":"neutral"
+  },
+  {
+    "input":"Agribusiness has a significant impact on local economies and communities.",
+    "output":"positive"
+  },
+  {
+    "input":"Farmers need to stay up-to-date with the latest agricultural trends and technologies.",
+    "output":"neutral"
+  },
+  {
+    "input":"Crop insurance can help farmers manage risk and uncertainty.",
+    "output":"positive"
+  },
+  {
+    "input":"Agribusiness requires careful planning and management to achieve success.",
+    "output":"neutral"
+  }
+]

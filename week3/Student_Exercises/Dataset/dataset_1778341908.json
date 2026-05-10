@@ -1,0 +1,32 @@
+[
+    {
+        "reviewer_name": "BrewMaster Bob",
+        "rating": 9,
+        "review_text": "This stout has a rich, roasted flavor with notes of coffee and dark chocolate. A truly exceptional brew!",
+        "date": "2023-10-26"
+    },
+    {
+        "reviewer_name": "Hoppy Hannah",
+        "rating": 8,
+        "review_text": "A fantastic IPA with a strong citrus aroma and a balanced bitterness. Very refreshing.",
+        "date": "2023-11-01"
+    },
+    {
+        "reviewer_name": "Lager Lover Liam",
+        "rating": 7,
+        "review_text": "A crisp and clean lager, perfect for a sunny afternoon. Nothing too adventurous, but consistently good.",
+        "date": "2023-11-05"
+    },
+    {
+        "reviewer_name": "Sour Sally",
+        "rating": 10,
+        "review_text": "Absolutely love the tartness and fruitiness of this sour ale. Complex and incredibly well-made.",
+        "date": "2023-11-10"
+    },
+    {
+        "reviewer_name": "Pilsner Pete",
+        "rating": 6,
+        "review_text": "Decent pilsner, but a bit too light for my taste. Lacks the depth I usually look for in this style.",
+        "date": "2023-11-15"
+    }
+]
