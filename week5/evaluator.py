@@ -1,3 +1,4 @@
+import time
 import gradio as gr
 import pandas as pd
 from collections import defaultdict
@@ -141,6 +142,7 @@ def run_answer_evaluation(progress=gr.Progress()):
 
         # Update progress bar only
         progress(prog_value, desc=f"Evaluating test {count}...")
+        time.sleep(1.5)
 
     # Calculate final averages
     avg_accuracy = total_accuracy / count

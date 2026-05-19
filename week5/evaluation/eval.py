@@ -1,3 +1,4 @@
+import os
 import sys
 import math
 from pydantic import BaseModel, Field
@@ -5,12 +6,15 @@ from litellm import completion
 from dotenv import load_dotenv
 
 from evaluation.test import TestQuestion, load_tests
-from implementation.answer import answer_question, fetch_context
+#from implementation.answer import answer_question, fetch_context
+from pro_implementation.answer import answer_question, fetch_context
 
 
 load_dotenv(override=True)
 
-MODEL = "gpt-4.1-nano"
+openrouter_api_key = os.getenv('OPENROUTER_API_KEY')
+openrouter_url = "https://openrouter.ai/api/v1"
+MODEL = "openai/gpt-4.1-nano"
 db_name = "vector_db"
 
 
@@ -153,8 +157,7 @@ Provide detailed feedback and scores from 1 (very poor) to 5 (ideal) for each di
     ]
 
     # Call LLM judge with structured outputs (async)
-    judge_response = completion(model=MODEL, messages=judge_messages, response_format=AnswerEval)
-
+    judge_response = completion(model="ollama/gemma3:4b", messages=judge_messages, response_format=AnswerEval, base_url="http://localhost:11434")
     answer_eval = AnswerEval.model_validate_json(judge_response.choices[0].message.content)
 
     return answer_eval, generated_answer, retrieved_docs

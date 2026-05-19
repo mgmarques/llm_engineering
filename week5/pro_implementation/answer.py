@@ -5,26 +5,31 @@ from litellm import completion
 from pydantic import BaseModel, Field
 from pathlib import Path
 from tenacity import retry, wait_exponential
-
+from ollama import Client
 
 load_dotenv(override=True)
 
 # MODEL = "openai/gpt-4.1-nano"
-MODEL = "groq/openai/gpt-oss-120b"
+#MODEL = "groq/openai/gpt-oss-120b"
+#MODEL = "ollama/llama3.1:8b" 
+MODEL = "ollama/gemma3:4b"
 DB_NAME = str(Path(__file__).parent.parent / "preprocessed_db")
 KNOWLEDGE_BASE_PATH = Path(__file__).parent.parent / "knowledge-base"
 SUMMARIES_PATH = Path(__file__).parent.parent / "summaries"
 
 collection_name = "docs"
-embedding_model = "text-embedding-3-large"
+#embedding_model = "text-embedding-3-large"
+embedding_model = "Qwen/Qwen3-Embedding-0.6B"
 wait = wait_exponential(multiplier=1, min=10, max=240)
 
-openai = OpenAI()
+ollama_url = "http://localhost:11434" 
+ollama_client = Client(host=ollama_url)
+#openai = OpenAI(api_key="ollama", base_url=f"{ollama_url}/v1")
 
 chroma = PersistentClient(path=DB_NAME)
 collection = chroma.get_or_create_collection(collection_name)
 
-RETRIEVAL_K = 20
+RETRIEVAL_K = 10
 FINAL_K = 10
 
 SYSTEM_PROMPT = """
@@ -99,26 +104,30 @@ This is the history of your conversation so far with the user:
 And this is the user's current question:
 {question}
 
-Respond only with a short, refined question that you will use to search the Knowledge Base.
-It should be a VERY short specific question most likely to surface content. Focus on the question details.
-IMPORTANT: Respond ONLY with the precise knowledgebase query, nothing else.
+Your responde shuld be:
+* Only correct grammar if necessary, never change the meaning. of the current question.
+* Summarize the question if necessary.
+* It shuld be a VERY short specific question. 
+* Never mention the company name unless it's already present on the user's current questions.
+* IMPORTANT: Respond ONLY with the knowledgebase query, nothing else.
 """
     response = completion(model=MODEL, messages=[{"role": "system", "content": message}])
     return response.choices[0].message.content
 
 
-def merge_chunks(chunks, reranked):
-    merged = chunks[:]
-    existing = [chunk.page_content for chunk in chunks]
-    for chunk in reranked:
+def merge_chunks(original, rewritten):
+    merged = original[:]
+    existing = [chunk.page_content for chunk in original]
+    for chunk in rewritten:
         if chunk.page_content not in existing:
             merged.append(chunk)
     return merged
 
 
 def fetch_context_unranked(question):
-    query = openai.embeddings.create(model=embedding_model, input=[question]).data[0].embedding
-    results = collection.query(query_embeddings=[query], n_results=RETRIEVAL_K)
+    #query = openai.embeddings.create(model=embedding_model, input=[question]).data[0].embedding
+    query = ollama_client.embeddings(model="qwen3-embedding:0.6b", prompt=question)
+    results = collection.query(query_embeddings=query['embedding'], n_results=RETRIEVAL_K)
     chunks = []
     for result in zip(results["documents"][0], results["metadatas"][0]):
         chunks.append(Result(page_content=result[0], metadata=result[1]))
@@ -127,9 +136,11 @@ def fetch_context_unranked(question):
 
 def fetch_context(original_question):
     rewritten_question = rewrite_query(original_question)
-    chunks1 = fetch_context_unranked(original_question)
-    chunks2 = fetch_context_unranked(rewritten_question)
-    chunks = merge_chunks(chunks1, chunks2)
+    print("Rewritten Question:", rewritten_question)
+    chunks_original = fetch_context_unranked(original_question)
+    chunks_rewritten_question = fetch_context_unranked(rewritten_question)
+    chunks = merge_chunks(chunks_original, chunks_rewritten_question)
+    print("Final merged chunks size:", len(chunks))
     reranked = rerank(original_question, chunks)
     return reranked[:FINAL_K]
 
@@ -139,7 +150,16 @@ def answer_question(question: str, history: list[dict] = []) -> tuple[str, list]
     """
     Answer a question using RAG and return the answer and the retrieved context
     """
-    chunks = fetch_context(question)
-    messages = make_rag_messages(question, history, chunks)
-    response = completion(model=MODEL, messages=messages)
-    return response.choices[0].message.content, chunks
+    try:
+        print("Original question:", question)
+        chunks = fetch_context(question)
+        print("Number of Chunks:", len(chunks))
+        messages = make_rag_messages(question, history, chunks)
+        print("Make the sunmit to LLM")
+        response = completion(model=MODEL, messages=messages)
+        print("Responsed from LLM")
+        return response.choices[0].message.content, chunks
+    except Exception as e:
+        msg = f"Error: {e}"
+        print(msg)
+        return msg
